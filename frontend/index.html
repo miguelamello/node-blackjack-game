@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta name="description" content="BlackJack Game">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="dist/bundle.js"></script>
+  </head>
+  <body>
+		<div class="title">Black Jack Game</div>
+		<div class="gamepane-player">Dealer Hand</div>
+		<div class="gamepane">
+			<img src="cards/0.png" alt="playing cards" class="playingcards">
+			<img src="cards/23.png" alt="playing cards" class="playingcards">
+		</div>
+		<div class="spacer"></div>
+		<div class="gamepane-player">Player Hand</div>
+		<div class="gamepane">
+			<img src="cards/2.png" alt="playing cards" class="playingcards">
+			<img src="cards/40.png" alt="playing cards" class="playingcards">
+		</div>
+		<div class="counter">
+			<div id="HTCpTWJAh">Dealer Score: 20</div>
+			<div id="bnSddBbUiNfi">Player Name: Player 1</div>
+			<div id="YhhKVfVNsDv">Player Score: 30</div>
+		</div>
+		<div class="buttons">
+			<button class="but-new" onclick="runner.showPlayerWin()">New Game</button>
+			<button class="but-score">Scores</button>
+			<button class="but-action">Hit</button>
+			<button class="but-action">Stay</button>
+		</div>
+		<div id="oqrhLoDtO" class="player-name">
+			<label for="QoKhNKStYZG">Player Name:</label>
+			<input id="vCzoHPwfX" type="text" id="QoKhNKStYZG" name="player-name" value="Player 2">
+			<button onclick="runner.startNewGame()">Go</button>
+		</div>
+  </body>
+</html>
