@@ -2,7 +2,7 @@ const express = require('express')
 const fs = require('fs')
 const cors = require('cors');
 const app = express()
-const port = 3010
+const port = 3020
 
 // Define an array of allowed origins
 const allowedOrigins = ['http://blackjack.orionsoft.site', 'http://localhost'];

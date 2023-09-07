@@ -563,7 +563,7 @@ class Runner {
 	readData() {
 		return new Promise((resolve, reject) => {
 			const xhr = new XMLHttpRequest();
-			xhr.open('GET', 'http://localhost:3010/scores', true);
+			xhr.open('GET', 'http://localhost:3020/scores', true);
 			xhr.onload = () => {
 				if (xhr.status === 200) {
 					resolve(JSON.parse(xhr.responseText));
@@ -579,7 +579,7 @@ class Runner {
 	saveData(data) {
 		return new Promise((resolve, reject) => {
 			const xhr = new XMLHttpRequest();
-			xhr.open('POST', 'http://localhost:3010/scores', true);
+			xhr.open('POST', 'http://localhost:3020/scores', true);
 			xhr.setRequestHeader('Content-Type', 'application/json');
 			xhr.onload = () => {
 				if (xhr.status === 200) {
