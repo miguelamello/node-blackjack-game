@@ -10,37 +10,43 @@
   </head>
   <body>
 		<div class="title">Black Jack Game</div>
-		<div class="gamepane-player">Dealer Hand</div>
+		<div class="gamepane-player">Dealer Deck</div>
 		<div class="gamepane" id="wwZlsPUv">
 			<img src="cards/0.png" alt="playing cards" class="playingcards">
 			<img src="cards/23.png" alt="playing cards" class="playingcards">
 		</div>
 		<div class="spacer"></div>
-		<div class="gamepane-player">Player Hand</div>
+		<div class="gamepane-player">Player Deck</div>
 		<div class="gamepane" id="VJINJzAVKKy">
 			<img src="cards/2.png" alt="playing cards" class="playingcards">
 			<img src="cards/40.png" alt="playing cards" class="playingcards">
 		</div>
 		<div class="counter">
-			<div id="HTCpTWJAh">Dealer Score: 0</div>
-			<div id="bnSddBbUiNfi">Player Name: Player 1</div>
-			<div id="YhhKVfVNsDv">Player Score: 0</div>
+			<div id="HTCpTWJAh">Dealer hand: 0</div>
+			<div id="YhhKVfVNsDv">Player hand: 0</div>
+			<div id="bnSddBbUiNfi">Player Name: ---</div>
+			<div id="cd4qlwyz82cb">Player Score: 0</div>
 		</div>
 		<div class="buttons">
-			<button class="but-new" id="RAHyqtNqRd">New Game</button>
-			<button class="but-score" id="mSCPZQmjHoAx">Scores</button>
-			<button class="but-action-off" id="OQXrkcqKiIEQ" disabled>Hit</button>
-			<button class="but-action-off" id="zKhgMWkBk" disabled>Stay</button>
+			<button class="but-new" id="RAHyqtNqRd" title="Start a new round">New Game</button>
+			<button class="but-score" id="mSCPZQmjHoAx" title="Show players scores">Scores</button>
+			<button class="but-action-off" id="OQXrkcqKiIEQ" disabled title="Hit a card from player's deck">Hit</button>
+			<button class="but-action-off" id="zKhgMWkBk" disabled title="Hit a card from dealer's deck">Stay</button>
 		</div>
 		<div id="oqrhLoDtO" class="alert">
 			<span>Player Name:</span>
-			<input id="vCzoHPwfX" type="text" value="Player 2">
+			<input id="vCzoHPwfX" type="text" value="Player 1">
 			<button id="YpBnSLSIIrq">Go</button>
 		</div>
 		<div id="wt4pccnsvg56" class="alert">
-			<div>Bursted!!!</div>
-			<button id="nu2t2ks82m6j">Restart</button>
-			<button id="vh4mow0wza7g">Quit</button>
+			<div id="s0axwaqdk6t8"></div>
+			<button onclick="runner.restart()">Restart</button>
+			<button onclick="runner.quit()">Quit</button>
+		</div>
+		<div id="d9hclh9s8rmc" class="scores">
+			<div>Scores Board</div>
+			<div id="tt43k1dytf38"></div>
+			<button onclick="runner.hideScoresWin()">Close</button>
 		</div>
   </body>
 </html>
