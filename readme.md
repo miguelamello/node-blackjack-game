@@ -16,6 +16,7 @@ You can try the game [blackjackgame.orionsoft.site](http://blackjackgame.orionso
 - ES6 (Javascript lasted version)
 - HTML
 - CSS
+- NodeJS
 - ExpressJS
 - db.json
 - Babel
