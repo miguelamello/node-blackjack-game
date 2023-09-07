@@ -22,6 +22,43 @@ You can try the game [blackjack.orionsoft.site](http://blackjack.orionsoft.site/
 - Babel
 - Webpack
 
+## Cards Manipulation
+
+The cards used in this game are simple PNG images. The cards are stored in the `/frontend/cards` folder. The cards are loaded on the demand based on the DOM API requests made by the game logic. The trick to pick the right card was achieved by naming each card PNG with an integer from 0 to 52. To solve the problem of the suits of cards needed by the game, I created a simple Class Method to feed an Array of Float numbers in which each float decinal represents a single card...
+
+```
+setCards() {
+	this.cards = [];
+	for (let h = 1; h <= 4; h++) {
+		for (let i = 1; i <= 52; i++) {
+			this.cards.push(parseFloat(h + '.' + i));
+		}
+	}
+}
+```
+
+any time a card is required, it's a matter of getting the card number from the decimal part of the float...
+
+```
+getCardNumber(card) {
+	return (card) ? Math.abs(card.toString().split('.')[1]) : 0;
+}
+```
+
+and using the card number to get the right card image...
+
+```
+createCard(card) {
+		const cardElement = document.createElement('img');
+		cardElement.className = 'playingcards';
+		cardElement.alt = 'playing cards';
+		const cardNumber = this.getCardNumber(card);
+		cardElement.src = `cards/${cardNumber}.png`;
+		return cardElement;
+	}
+```
+
+Please take a close look at the `ruuner.js` file to see how the cards are manipulated.
 
 ## Conclusion
 
