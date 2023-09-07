@@ -58,7 +58,7 @@ createCard(card) {
 }
 ```
 
-Please take a close look at the `ruuner.js` file to see how the cards are manipulated.
+Please take a close look at the `/frontend/src/runner.js` file to see how the cards are manipulated.
 
 ## Conclusion
 
