@@ -49,13 +49,13 @@ and using the card number to get the right card image...
 
 ```
 createCard(card) {
-		const cardElement = document.createElement('img');
-		cardElement.className = 'playingcards';
-		cardElement.alt = 'playing cards';
-		const cardNumber = this.getCardNumber(card);
-		cardElement.src = `cards/${cardNumber}.png`;
-		return cardElement;
-	}
+	const cardElement = document.createElement('img');
+	cardElement.className = 'playingcards';
+	cardElement.alt = 'playing cards';
+	const cardNumber = this.getCardNumber(card);
+	cardElement.src = `cards/${cardNumber}.png`;
+	return cardElement;
+}
 ```
 
 Please take a close look at the `ruuner.js` file to see how the cards are manipulated.
