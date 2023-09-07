@@ -5,7 +5,7 @@ const app = express()
 const port = 3020
 
 // Define an array of allowed origins
-const allowedOrigins = ['http://blackjack.orionsoft.site', 'http://localhost'];
+const allowedOrigins = ['http://blackjack.orionsoft.site', 'http://localhost:3010'];
 
 // Configure cors middleware with allowed origins
 app.use(
