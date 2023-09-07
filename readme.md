@@ -8,7 +8,7 @@ I decided to create one unique Class to run the game logic in a "reactive" appro
 
 ## Try the game
 
-You can try the game [blackjackgame.orionsoft.site](http://blackjackgame.orionsoft.site/).
+You can try the game [blackjack.orionsoft.site](http://blackjack.orionsoft.site/).
 
 
 ## Technology Stack
